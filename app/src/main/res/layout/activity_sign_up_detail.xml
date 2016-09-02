@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/signupdetaillayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="#4286f5">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/arrowback"
+            android:padding="@dimen/dp10"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/sp15"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/dp20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Varify Your Phone Number"
+            android:textSize="@dimen/sp13"
+            android:textColor="#38475f"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp30">
+
+            <TextView
+                android:id="@+id/resend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resend"
+                android:textColor="#4286f5"
+                android:layout_marginRight="@dimen/dp15"
+                android:textSize="@dimen/sp13"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+            <View
+                android:id="@+id/v1"
+                android:layout_width="@dimen/dp2"
+                android:layout_height="@dimen/dp20"
+                android:layout_toLeftOf="@+id/resend"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp20"
+                android:background="#cfd7e6"/>
+
+
+
+            <LinearLayout
+                android:id="@+id/incorrect_otp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/v1"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp20"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp15"
+                    android:layout_height="@dimen/dp15"
+                    android:src="@drawable/cross"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Incorrect"
+                    android:textSize="@dimen/sp13"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:textColor="#ee675d"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/varified_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp15"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp15"
+                    android:layout_height="@dimen/dp15"
+                    android:src="@drawable/right"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Verified"
+                    android:textSize="@dimen/sp13"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:textColor="#6ebb80"/>
+
+            </LinearLayout>
+
+            
+            
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp35"
+                android:layout_toLeftOf="@+id/incorrect_otp"
+                android:hint="OTP Code"
+                android:textSize="@dimen/sp13"
+                android:singleLine="true"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textColorHint="#a9b5c8"
+                android:layout_marginRight="@dimen/dp5"
+                android:background="#00000000"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:background="#cfd7e6"/>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:hint="Your Name"
+            android:textSize="@dimen/sp13"
+            android:singleLine="true"
+            android:inputType="text"
+            android:maxLength="32"
+            android:textColorHint="#a9b5c8"
+            android:background="#00000000"
+            android:layout_marginTop="@dimen/dp25"
+            android:paddingRight="@dimen/dp15"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cfd7e6"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:hint="Email Address"
+            android:textSize="@dimen/sp13"
+            android:textColorHint="#a9b5c8"
+            android:background="#00000000"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="@dimen/dp25"
+            android:paddingRight="@dimen/dp15"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cfd7e6"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:hint="Password"
+            android:textSize="@dimen/sp13"
+            android:textColorHint="#a9b5c8"
+            android:background="#00000000"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:layout_marginTop="@dimen/dp25"
+            android:paddingRight="@dimen/dp15"
+            />
+
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cfd7e6"/>
+
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:hint="Confirm Password"
+        android:textSize="@dimen/sp13"
+            android:singleLine="true"
+            android:inputType="textPassword"
+        android:textColorHint="#a9b5c8"
+        android:background="#00000000"
+        android:layout_marginTop="@dimen/dp15"
+        android:paddingRight="@dimen/dp15"
+        />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cfd7e6"/>
+
+
+        <Button
+            android:id="@+id/sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:background="@drawable/login_round_shape"
+            android:layout_marginTop="@dimen/dp30"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp15"/>
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

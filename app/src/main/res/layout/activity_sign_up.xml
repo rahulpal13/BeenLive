@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/signuplayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="#4286f5">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/arrowback"
+            android:padding="@dimen/dp10"
+            android:layout_centerVertical="true"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/sp15"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Your Phone Number"
+            android:textSize="@dimen/sp13"
+            android:textColor="#38475f"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp35">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="India"
+                android:textSize="@dimen/sp13"
+                android:textColor="#4286f5"/>
+
+            <ImageView
+                android:layout_width="@dimen/dp10"
+                android:layout_height="@dimen/dp10"
+                android:src="@drawable/arrwodown"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="#cfd7e6"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp35">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+91"
+                android:textSize="@dimen/sp13"
+                android:textColor="#38475f"/>
+
+            <View
+                android:layout_width="@dimen/dp1"
+                android:layout_height="match_parent"
+                android:background="#cfd7e6"
+                android:layout_marginLeft="@dimen/dp10"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp30"
+                android:hint="Phone Number"
+                android:textColorHint="#a9b5c8"
+                android:textSize="@dimen/sp13"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:background="#00000000"
+                android:layout_marginLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp15"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1.5dp"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="#cfd7e6"/>
+
+        <Button
+            android:id="@+id/signup_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:background="@drawable/login_round_shape"
+            android:layout_marginTop="@dimen/dp25"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp15"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

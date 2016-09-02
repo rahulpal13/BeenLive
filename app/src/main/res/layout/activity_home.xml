@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="#4286f5">
+
+        <ImageView
+            android:id="@+id/logo_icon"
+            android:layout_width="@dimen/dp35"
+            android:layout_height="@dimen/dp35"
+            android:src="@drawable/logo"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="California College of the Arts"
+            android:textColor="#ffffff"
+            android:layout_toRightOf="@+id/logo_icon"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/sp15"/>
+
+        <ImageView
+            android:id="@+id/notification"
+            android:layout_width="@dimen/dp15"
+            android:layout_height="@dimen/dp15"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/notification"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp15"/>
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="@dimen/dp15"
+            android:layout_height="@dimen/dp15"
+            android:src="@drawable/search"
+            android:layout_toLeftOf="@+id/notification"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4f90f9"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        android:layout_below="@+id/topview">
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabs"
+        android:background="@android:color/white" />
+
+
+
+
+<RelativeLayout
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="@dimen/dp20"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/home_bottom_shape"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp45"
+        android:layout_height="@dimen/dp45"
+        android:background="@drawable/profile_circle_shape"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:src="@drawable/profileicon"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp45"
+        android:layout_height="@dimen/dp45"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/profile_circle_shape"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:src="@drawable/explore"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+    <ImageView
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        android:src="@drawable/golive"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp15"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

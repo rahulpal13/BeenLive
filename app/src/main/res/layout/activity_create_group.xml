@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/creategrouplayout"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="#4286f5">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/arrowback"
+            android:padding="@dimen/dp10"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Group"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/sp15"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SKIP"
+            android:textSize="@dimen/sp15"
+            android:textColor="#b3cefb"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp20"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/dp45"
+            android:layout_height="@dimen/dp45"
+            android:src="@drawable/groupprofile"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Group Photo"
+            android:layout_marginLeft="@dimen/dp10"
+            android:textColor="@color/blue_dark_Color"
+            />
+
+
+    </LinearLayout>
+
+
+<!--for company name-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I'm From Company"
+        android:layout_marginTop="@dimen/dp20"
+        android:textSize="@dimen/sp13"
+        android:textColor="@color/blue_dark_Color"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:hint="Company Name"
+        android:textSize="@dimen/sp13"
+        android:textColorHint="#c6cfe0"
+        android:background="@null"
+        android:singleLine="true"
+        android:inputType="text"
+        android:maxLength="32"
+        android:layout_marginTop="@dimen/dp10"
+        android:paddingRight="@dimen/dp15"
+        android:paddingLeft="@dimen/dp15"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightGrey"/>
+
+
+<!--for domain name-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I Would Create Domain"
+        android:layout_marginTop="@dimen/dp20"
+        android:textSize="@dimen/sp13"
+        android:textColor="@color/blue_dark_Color"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:hint="Domain Name"
+        android:textSize="@dimen/sp13"
+        android:textColorHint="#c6cfe0"
+        android:background="@null"
+        android:singleLine="true"
+        android:inputType="text"
+        android:maxLength="32"
+        android:layout_marginTop="@dimen/dp10"
+        android:paddingRight="@dimen/dp15"
+        android:paddingLeft="@dimen/dp15"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightGrey"/>
+
+    <!--Email id with above domain name-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I Would Create Domain"
+        android:layout_marginTop="@dimen/dp20"
+        android:textSize="@dimen/sp13"
+        android:textColor="@color/blue_dark_Color"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:hint="Email Id With Above Domain Name"
+        android:textSize="@dimen/sp13"
+        android:textColorHint="#c6cfe0"
+        android:background="@null"
+        android:singleLine="true"
+        android:inputType="text"
+        android:maxLength="32"
+        android:layout_marginTop="@dimen/dp10"
+        android:paddingRight="@dimen/dp15"
+        android:paddingLeft="@dimen/dp15"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightGrey"/>
+
+<!--About Group-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Group"
+        android:layout_marginTop="@dimen/dp20"
+        android:textSize="@dimen/sp13"
+        android:textColor="@color/blue_dark_Color"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:hint="Write something about group"
+        android:textSize="@dimen/sp13"
+        android:textColorHint="#c6cfe0"
+        android:background="@null"
+        android:singleLine="true"
+        android:inputType="text"
+        android:maxLength="32"
+        android:layout_marginTop="@dimen/dp10"
+        android:paddingRight="@dimen/dp15"
+        android:paddingLeft="@dimen/dp15"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightGrey"/>
+
+
+
+    <Button
+        android:id="@+id/create_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:background="@drawable/login_round_shape"
+        android:layout_marginTop="@dimen/dp20"
+        android:text="Create Group"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="@dimen/dp5"
+        android:textSize="@dimen/sp15"/>
+
+
+</LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
