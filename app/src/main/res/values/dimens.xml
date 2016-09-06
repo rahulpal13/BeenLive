@@ -21,4 +21,5 @@
     <dimen name="dp12">12dp</dimen>
     <dimen name="dp380">350dp</dimen>
     <dimen name="sp10">10sp</dimen>
+    <dimen name="dp8">8dp</dimen>
 </resources>

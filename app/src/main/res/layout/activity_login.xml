@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
    android:id="@+id/loginlayout"
@@ -27,8 +28,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Login"
-            android:textColor="#38475f"
+            android:text="@string/login"
+            android:textColor="@color/text_color_normal"
             android:textSize="@dimen/sp15"/>
 
         <LinearLayout
@@ -41,13 +42,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sign Up"
-                android:textColor="#468cff"
+                android:text="@string/sign_up"
+                android:textColor="@color/text_color_linked"
                 android:textSize="@dimen/sp15"/>
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#468cff"/>
+                android:layout_height="@dimen/dp1"
+                android:background="@color/text_color_linked"/>
 
         </LinearLayout>
 
@@ -67,18 +68,18 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp45"
-        android:hint="Phone Number"
+        android:hint="@string/phone_number"
         android:textSize="@dimen/sp13"
-        android:textColorHint="#a9b5c8"
+        android:textColorHint="@color/text_color_hint"
         android:singleLine="true"
         android:inputType="phone"
-        android:background="#00000000"
+        android:background="@null"
         android:paddingRight="@dimen/dp15"
         />
     <View
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#c4cbd9"/>
+        android:layout_height="@dimen/dp1"
+        android:background="@color/normal_line_background"/>
 
 
     <RelativeLayout
@@ -89,11 +90,11 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp45"
-            android:background="#00000000"
-            android:hint="Password"
+            android:background="@null"
+            android:hint="@string/password"
             android:singleLine="true"
             android:inputType="textPassword"
-            android:textColorHint="#a9b5c8"
+            android:textColorHint="@color/text_color_hint"
             android:layout_toLeftOf="@+id/forgottext"
             android:textSize="@dimen/sp13"
             android:paddingRight="@dimen/dp15"
@@ -105,14 +106,14 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:textColor="#38475f"
-            android:text="Forgot?"/>
+            android:textColor="@color/text_color_normal"
+            android:text="@string/forgot_password"/>
 
     </RelativeLayout>
     <View
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#c4cbd9"/>
+        android:layout_height="@dimen/dp1"
+        android:background="@color/normal_line_background"/>
 
 
     <Button
@@ -121,7 +122,8 @@
         android:layout_height="@dimen/dp45"
         android:background="@drawable/login_round_shape"
         android:layout_marginTop="@dimen/dp25"
-        android:text="Login"
+        android:text="@string/login"
+        android:textAllCaps="false"
         android:textColor="#ffffff"
         android:textSize="@dimen/sp15"/>
 
@@ -143,9 +145,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Or Connect With"
+            android:text="@string/or_connect_with"
             android:textSize="@dimen/sp13"
-            android:textColor="#2b3749"/>
+            android:textColor="@color/text_color_normal"/>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -162,6 +164,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
                 android:src="@drawable/facebook"/>
+
             <ImageView
                 android:layout_width="@dimen/dp50"
                 android:layout_height="@dimen/dp50"
@@ -172,12 +175,10 @@
             <ImageView
             android:layout_width="@dimen/dp50"
             android:layout_height="@dimen/dp50"
-                android:layout_alignParentRight="true"
+            android:layout_alignParentRight="true"
             android:src="@drawable/googleplus"/>
 
         </RelativeLayout>
-
-
     </LinearLayout>
 
 
@@ -186,5 +187,5 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp7"
         android:layout_alignParentBottom="true"
-        android:background="#4286f5"/>
+        android:background="@color/headerColor"/>
 </RelativeLayout>

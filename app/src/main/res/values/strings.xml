@@ -3,4 +3,24 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_splash">Splash</string>
     <string name="title_activity_create_group">CreateGroupActivity</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot?</string>
+    <string name="or_connect_with">Or Connect With</string>
+    <string name="enter_your_phone_number">Enter Your Phone Number</string>
+    <string name="next">Next</string>
+    <string name="varify_your_phone_number">Varify Your Phone Number</string>
+    <string name="otp_code">OTP Code</string>
+    <string name="your_name">Your Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="create_group">Create Group</string>
+    <string name="skip">SKIP</string>
+    <string name="upload_group_photo">Upload Group Photo</string>
+    <string name="about_group">About Group</string>
+    <string name="company_name">Company Name</string>
+    <string name="domain_name">Domain Name</string>
+    <string name="california_college_of_the_arts">California College of the Arts</string>
 </resources>

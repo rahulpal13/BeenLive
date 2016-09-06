@@ -9,7 +9,7 @@
         android:id="@+id/topview"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp50"
-        android:background="#4286f5">
+        android:background="@color/headerColor">
 
         <ImageView
             android:id="@+id/logo_icon"
@@ -23,8 +23,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="California College of the Arts"
-            android:textColor="#ffffff"
+            android:text="@string/california_college_of_the_arts"
+            android:textColor="@android:color/white"
             android:layout_toRightOf="@+id/logo_icon"
             android:layout_marginLeft="@dimen/dp10"
             android:layout_centerVertical="true"
@@ -55,7 +55,7 @@
         android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#4f90f9"
+        android:background="@color/tab_background_color"
         app:tabGravity="fill"
         app:tabMode="fixed"
         android:layout_below="@+id/topview">

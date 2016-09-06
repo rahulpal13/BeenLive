@@ -3,16 +3,16 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-
-
-    <color name="blueColor">#4286f5</color>
     <color name="lightGrey">#e5ebf6</color>
     <color name="blue_dark_Color">#38475f</color>
-
-
-
     <color name="tab_indicator_color">#95bcfb</color>
-
     <color name="headerColor">#4286f5 </color>
     <color name="white">#FFFFFF </color>
+    <color name="text_color_normal">#38475f</color>
+    <color name="text_color_linked">#468cff</color>
+    <color name="text_color_hint">#a9b5c8</color>
+    <color name="normal_line_background">#c4cbd9</color>
+    <color name="tab_background_color">#4f90f9</color>
+    <color name="text_color_yellow">#fee32c</color>
+
 </resources>

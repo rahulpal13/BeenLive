@@ -28,14 +28,13 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.homefragment, container, false);
 
         ListView list = (ListView)view.findViewById(R.id.profilelist);
-        HomeArrayAdapter adapter = new HomeArrayAdapter(getActivity(),0);
+        HomeArrayAdapter adapter = new HomeArrayAdapter(getContext(),0);
         list.setAdapter(adapter);
-        C.applyTypeface(C.getParentView(view.findViewById(R.id.home_profile)),C.getAvenirProRegularFontTypeface(getActivity()));
+        C.applyTypeface(C.getParentView(view.findViewById(R.id.home_profile)),C.getAvenirProRegularFontTypeface(getContext()));
 
       for(int i=0; i<5;i++){
           adapter.add(new Item(R.drawable.profilebackgrounddummy));
       }
-
         return view;
     }
 

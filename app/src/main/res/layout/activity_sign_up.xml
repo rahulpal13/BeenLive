@@ -9,7 +9,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp50"
-        android:background="#4286f5">
+        android:background="@color/headerColor">
 
         <ImageView
             android:layout_width="40dp"
@@ -22,8 +22,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sign Up"
-            android:textColor="#ffffff"
+            android:text="@string/sign_up"
+            android:textColor="@android:color/white"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
             android:textSize="@dimen/sp15"/>
@@ -40,9 +40,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Enter Your Phone Number"
+            android:text="@string/enter_your_phone_number"
             android:textSize="@dimen/sp13"
-            android:textColor="#38475f"/>
+            android:textColor="@color/text_color_normal"/>
 
 
         <RelativeLayout
@@ -55,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:text="India"
                 android:textSize="@dimen/sp13"
-                android:textColor="#4286f5"/>
+                android:textColor="@color/headerColor"/>
 
             <ImageView
                 android:layout_width="@dimen/dp10"
@@ -83,7 +83,7 @@
                 android:layout_height="wrap_content"
                 android:text="+91"
                 android:textSize="@dimen/sp13"
-                android:textColor="#38475f"/>
+                android:textColor="@color/text_color_normal"/>
 
             <View
                 android:layout_width="@dimen/dp1"
@@ -94,8 +94,8 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dp30"
-                android:hint="Phone Number"
-                android:textColorHint="#a9b5c8"
+                android:hint="@string/phone_number"
+                android:textColorHint="@color/text_color_hint"
                 android:textSize="@dimen/sp13"
                 android:singleLine="true"
                 android:inputType="phone"
@@ -118,9 +118,9 @@
             android:layout_height="@dimen/dp45"
             android:background="@drawable/login_round_shape"
             android:layout_marginTop="@dimen/dp25"
-            android:text="Next"
+            android:text="@string/next"
             android:textAllCaps="false"
-            android:textColor="#ffffff"
+            android:textColor="@android:color/white"
             android:textSize="@dimen/sp15"/>
 
     </LinearLayout>

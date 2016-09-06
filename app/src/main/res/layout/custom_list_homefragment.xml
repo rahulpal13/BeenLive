@@ -37,7 +37,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Caroline Brown"
-                android:textSize="@dimen/sp15"
+                android:textSize="@dimen/sp13"
                 android:layout_centerVertical="true"
                 android:textColor="@color/blue_dark_Color"/>
 
@@ -73,6 +73,7 @@
             android:layout_marginLeft="@dimen/dp10"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
+            android:visibility="gone"
             >
 
             <LinearLayout
@@ -103,10 +104,57 @@
                 android:layout_height="wrap_content"
                 android:text="views"
                 android:gravity="right"
-                android:textSize="@dimen/sp13"
+                android:textSize="@dimen/sp10"
                 android:textColor="#a5b1c7"/>
 
         </LinearLayout>
+
+
+        <!--for timer and days-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="visible"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp15"
+                    android:layout_height="@dimen/dp12"
+                    android:src="@drawable/clock"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 Sep, 11:20 pm"
+                    android:textSize="@dimen/sp13"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:textColor="#4183f0"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="15 days left"
+                android:gravity="right"
+                android:textSize="@dimen/sp10"
+                android:textColor="#a5b1c7"/>
+
+        </LinearLayout>
+
 
     </RelativeLayout>
 
@@ -126,6 +174,7 @@
             android:gravity="center_vertical"
             android:background="@drawable/live_btn_shape"
             android:padding="@dimen/dp5"
+            android:visibility="gone"
             android:layout_alignParentRight="true">
 
 
@@ -146,6 +195,81 @@
 
         </LinearLayout>
 
+        <!--for set remiender-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp25"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp5"
+                android:gravity="center_vertical"
+                android:background="@drawable/paid_background_shape">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paid:"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:textSize="@dimen/sp10"
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/dp10"
+                    android:layout_height="@dimen/dp10"
+                    android:src="@drawable/diamondyellow"
+                    android:layout_marginLeft="@dimen/dp5"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="200"
+                    android:textColor="@color/text_color_yellow"
+                    android:textSize="@dimen/sp10"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp5"
+                    />
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/setremiender"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp25"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/live_btn_shape"
+            android:padding="@dimen/dp5"
+            android:visibility="visible"
+            android:layout_alignParentRight="true">
+
+
+            <ImageView
+                android:layout_width="@dimen/dp12"
+                android:layout_height="@dimen/dp8"
+                android:layout_marginLeft="@dimen/dp5"
+                android:background="@drawable/reminder"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Reminder"
+                android:textColor="#fff"
+                android:layout_marginRight="@dimen/dp5"
+                android:layout_marginLeft="@dimen/dp5"
+                android:textSize="@dimen/sp10"/>
+
+        </LinearLayout>
+        </RelativeLayout>
+
 
         <!--for detail and likes-->
 
@@ -159,14 +283,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Fully fun Time"
-                android:textSize="@dimen/sp15"
+                android:textSize="@dimen/sp13"
                 android:textColor="#ffffff"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="#fun #friends"
-                android:textSize="@dimen/sp15"
+                android:textSize="@dimen/sp13"
                 android:textColor="#ffffff"/>
 
 
@@ -187,19 +311,19 @@
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="@dimen/dp45"
                     android:layout_height="@dimen/dp45"
-                    android:src="@drawable/profiledummy"/>
+                    android:src="@drawable/userone"/>
 
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="@dimen/dp45"
                     android:layout_height="@dimen/dp45"
                     android:layout_marginLeft="@dimen/dp5"
                     android:layout_marginRight="@dimen/dp5"
-                    android:src="@drawable/profiledummy"/>
+                    android:src="@drawable/usertwo"/>
 
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="@dimen/dp45"
                     android:layout_height="@dimen/dp45"
-                    android:src="@drawable/profiledummy"/>
+                    android:src="@drawable/userthree"/>
 
                 <TextView
                     android:layout_width="wrap_content"

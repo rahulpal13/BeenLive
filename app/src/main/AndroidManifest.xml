@@ -21,29 +21,30 @@
         <activity
             android:name=".BeenLive.LoginActivity"
             android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize" />
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize|adjustPan" />
         <activity
             android:name=".BeenLive.SignUpActivity"
-            android:windowSoftInputMode="adjustResize|adjustPan"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".BeenLive.SignUpDetailActivity"
-            android:theme="@style/AppTheme"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize" />
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
             android:name=".BeenLive.CreateGroupActivity"
             android:label="@string/title_activity_create_group"
-            android:theme="@style/AppTheme"
             android:screenOrientation="portrait"
-            />
-        <activity android:name=".BeenLive.HomeActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".BeenLive.HomeActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
-            ></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".BeenLive.ChatActivity"></activity>
     </application>
 
 </manifest>

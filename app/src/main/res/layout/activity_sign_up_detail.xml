@@ -44,9 +44,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Varify Your Phone Number"
+            android:text="@string/varify_your_phone_number"
             android:textSize="@dimen/sp13"
-            android:textColor="#38475f"/>
+            android:textColor="@color/text_color_normal"/>
 
 
         <RelativeLayout
@@ -135,49 +135,49 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dp35"
                 android:layout_toLeftOf="@+id/incorrect_otp"
-                android:hint="OTP Code"
+                android:hint="@string/otp_code"
                 android:textSize="@dimen/sp13"
                 android:singleLine="true"
                 android:inputType="number"
                 android:maxLength="6"
-                android:textColorHint="#a9b5c8"
+                android:textColorHint="@color/text_color_hint"
                 android:layout_marginRight="@dimen/dp5"
-                android:background="#00000000"/>
+                android:background="@null"/>
 
         </RelativeLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp1"
-            android:background="#cfd7e6"/>
+            android:background="@color/normal_line_background"/>
 
 
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp45"
-            android:hint="Your Name"
+            android:hint="@string/your_name"
             android:textSize="@dimen/sp13"
             android:singleLine="true"
             android:inputType="text"
             android:maxLength="32"
-            android:textColorHint="#a9b5c8"
-            android:background="#00000000"
+            android:textColorHint="@color/text_color_hint"
+            android:background="@null"
             android:layout_marginTop="@dimen/dp25"
             android:paddingRight="@dimen/dp15"
             />
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#cfd7e6"/>
+            android:layout_height="@dimen/dp1"
+            android:background="@color/normal_line_background"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp45"
-            android:hint="Email Address"
+            android:hint="@string/email_address"
             android:textSize="@dimen/sp13"
-            android:textColorHint="#a9b5c8"
-            android:background="#00000000"
+            android:textColorHint="@color/text_color_hint"
+            android:background="@null"
             android:singleLine="true"
             android:inputType="textEmailAddress"
             android:layout_marginTop="@dimen/dp25"
@@ -185,16 +185,16 @@
             />
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#cfd7e6"/>
+            android:layout_height="@dimen/dp1"
+            android:background="@color/normal_line_background"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp45"
-            android:hint="Password"
+            android:hint="@string/password"
             android:textSize="@dimen/sp13"
             android:textColorHint="#a9b5c8"
-            android:background="#00000000"
+            android:background="@null"
             android:singleLine="true"
             android:inputType="textPassword"
             android:layout_marginTop="@dimen/dp25"
@@ -209,19 +209,19 @@
         <EditText
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp45"
-        android:hint="Confirm Password"
+        android:hint="@string/confirm_password"
         android:textSize="@dimen/sp13"
             android:singleLine="true"
             android:inputType="textPassword"
         android:textColorHint="#a9b5c8"
-        android:background="#00000000"
+        android:background="@null"
         android:layout_marginTop="@dimen/dp15"
         android:paddingRight="@dimen/dp15"
         />
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#cfd7e6"/>
+            android:layout_height="@dimen/dp1"
+            android:background="@color/normal_line_background"/>
 
 
         <Button
@@ -230,9 +230,9 @@
             android:layout_height="@dimen/dp45"
             android:background="@drawable/login_round_shape"
             android:layout_marginTop="@dimen/dp30"
-            android:text="Sign Up"
+            android:text="@string/sign_up"
             android:textAllCaps="false"
-            android:textColor="#ffffff"
+            android:textColor="@android:color/white"
             android:textSize="@dimen/sp15"/>
     </LinearLayout>
 

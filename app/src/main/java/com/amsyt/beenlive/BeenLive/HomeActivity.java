@@ -84,11 +84,11 @@ public class HomeActivity extends AppCompatActivity {
 
             }
         });
-
-
     }
 
     private void setTabLayout(){
+
+
 
         home = tabLayout.newTab();
         profile = tabLayout.newTab();
@@ -100,18 +100,20 @@ public class HomeActivity extends AppCompatActivity {
         message.setIcon(R.drawable.messageicon);
         schedular.setIcon(R.drawable.scheduleicon);
 
-
-
         tabLayout.addTab(home, 0);
         tabLayout.addTab(profile, 1);
         tabLayout.addTab(message, 2);
         tabLayout.addTab(schedular, 3);
 
+
+        tabLayout.getTabAt(1).getIcon().setAlpha(255);
+        tabLayout.getTabAt(2).getIcon().setAlpha(255);
         tabLayout.setSelectedTabIndicatorColor(this.getResources().getColor(R.color.tab_indicator_color));
         tabLayout.setSelectedTabIndicatorHeight(5);
     }
 
     private void setTabIcon(){
+
         home.setIcon(R.drawable.homeicon);
         profile.setIcon(R.drawable.profileicon);
         message.setIcon(R.drawable.messageicon);
@@ -132,7 +134,7 @@ public class HomeActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return 4;           // As there are only 3 Tabs
+            return 4;
         }
     }
 

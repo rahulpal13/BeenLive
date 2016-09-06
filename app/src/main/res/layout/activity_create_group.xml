@@ -24,8 +24,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Create Group"
-            android:textColor="#ffffff"
+            android:text="@string/create_group"
+            android:textColor="@android:color/white"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
             android:textSize="@dimen/sp15"/>
@@ -33,7 +33,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SKIP"
+            android:text="@string/skip"
             android:textSize="@dimen/sp15"
             android:textColor="#b3cefb"
             android:layout_marginRight="@dimen/dp10"
@@ -66,9 +66,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Upload Group Photo"
+            android:text="@string/upload_group_photo"
             android:layout_marginLeft="@dimen/dp10"
-            android:textColor="@color/blue_dark_Color"
+            android:textColor="@color/text_color_normal"
             />
 
 
@@ -82,15 +82,15 @@
         android:text="I'm From Company"
         android:layout_marginTop="@dimen/dp20"
         android:textSize="@dimen/sp13"
-        android:textColor="@color/blue_dark_Color"/>
+        android:textColor="@color/text_color_normal"/>
 
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp45"
-        android:hint="Company Name"
+        android:hint="@string/company_name"
         android:textSize="@dimen/sp13"
-        android:textColorHint="#c6cfe0"
+        android:textColorHint="@color/text_color_hint"
         android:background="@null"
         android:singleLine="true"
         android:inputType="text"
@@ -102,7 +102,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/lightGrey"/>
+        android:background="@color/normal_line_background"/>
 
 
 <!--for domain name-->
@@ -113,15 +113,15 @@
         android:text="I Would Create Domain"
         android:layout_marginTop="@dimen/dp20"
         android:textSize="@dimen/sp13"
-        android:textColor="@color/blue_dark_Color"/>
+        android:textColor="@color/text_color_normal"/>
 
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp45"
-        android:hint="Domain Name"
+        android:hint="@string/domain_name"
         android:textSize="@dimen/sp13"
-        android:textColorHint="#c6cfe0"
+        android:textColorHint="@color/text_color_hint"
         android:background="@null"
         android:singleLine="true"
         android:inputType="text"
@@ -132,8 +132,8 @@
         />
     <View
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/lightGrey"/>
+        android:layout_height="@dimen/dp1"
+        android:background="@color/normal_line_background"/>
 
     <!--Email id with above domain name-->
 
@@ -143,7 +143,7 @@
         android:text="I Would Create Domain"
         android:layout_marginTop="@dimen/dp20"
         android:textSize="@dimen/sp13"
-        android:textColor="@color/blue_dark_Color"/>
+        android:textColor="@color/text_color_normal"/>
 
 
     <EditText
@@ -151,7 +151,7 @@
         android:layout_height="@dimen/dp45"
         android:hint="Email Id With Above Domain Name"
         android:textSize="@dimen/sp13"
-        android:textColorHint="#c6cfe0"
+        android:textColorHint="@color/text_color_hint"
         android:background="@null"
         android:singleLine="true"
         android:inputType="text"
@@ -163,7 +163,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/lightGrey"/>
+        android:background="@color/normal_line_background"/>
 
 <!--About Group-->
 
@@ -171,10 +171,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="About Group"
+        android:text="@string/about_group"
         android:layout_marginTop="@dimen/dp20"
         android:textSize="@dimen/sp13"
-        android:textColor="@color/blue_dark_Color"/>
+        android:textColor="@color/text_color_normal"/>
 
 
     <EditText
@@ -193,8 +193,8 @@
         />
     <View
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/lightGrey"/>
+        android:layout_height="@dimen/dp1"
+        android:background="@color/normal_line_background"/>
 
 
 
@@ -204,9 +204,9 @@
         android:layout_height="@dimen/dp45"
         android:background="@drawable/login_round_shape"
         android:layout_marginTop="@dimen/dp20"
-        android:text="Create Group"
+        android:text="@string/create_group"
         android:textAllCaps="false"
-        android:textColor="#ffffff"
+        android:textColor="@android:color/white"
         android:layout_marginBottom="@dimen/dp5"
         android:textSize="@dimen/sp15"/>
 
